@@ -1,0 +1,123 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #A9A9A0;
+}
+
+.container {
+  padding: 0 0%;
+  margin-left: 5%;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  color:#0000FF;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#00008b;
+  font-style:italic;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+button {
+  padding: 6px 8px;
+  margin-left: 5%;
+  text-decoration:none;
+  color:#0000FF;
+  background-color: #B0C4DE;
+  margin-bottom: 1.2em;
+  position: relative;
+  font-size: 1em;
+  box-shadow: 0 4px 15px 0px rgba(0, 02, 177, 0.52);
+}
+
+button:hover {
+  filter: brightness(115%);
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #7BA05B;
+  filter: brightness(110%);
+}
+
+
+
+
+  /* попапчик */
+dialog{
+  background: #A9A9A0;
+  position: fixed;
+  transform: all 1.8s ease 0s;;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup__close {
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.popup__close:hover {
+  color: #000;
+  filter: brightness(120%);
+}
+
+.popup__title {
+  font-size: 40px;
+  margin: 0px 0px 0.1em 162px;
+}
+
+.popup__photo {
+  border-radius: 50px;
+  border: 3px solid transparent;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.8);
+  object-fit: cover;
+}
+
+.popup__photo:hover {
+  filter: brightness(102%);
+}
+
+
